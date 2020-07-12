@@ -1,0 +1,37 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink="/">
+    <span class="brand-title">Alondra</span>
+    <span class="brand-subtitle">Cosmética Natural</span>
+  </a>
+  <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button> -->
+
+  <ul class="navbar-nav mr-auto menu">
+    <li class="nav-item active">
+      <a class="nav-link" href="#productos">Productos <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/">Preguntas Frecuentes <span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+
+  <div class="whatsapp">
+    <img src="/assets/images/icons/whatsapp.png" width="30px" /> +54 11 3140 7816
+  </div>
+
+  <div class="nav-button" [class.open]="navButtonOpen" (click)="change()">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+  </div>
+
+  <ul class="responsive-menu fadeIn" *ngIf="navButtonOpen">
+    <li class="nav-item active">
+      <a class="nav-link" href="#productos">Productos <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" routerLink="/">Preguntas Frecuentes <span class="sr-only">(current)</span></a>
+    </li>
+  </ul>
+</nav>

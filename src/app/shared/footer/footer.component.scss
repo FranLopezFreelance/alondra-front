@@ -1,0 +1,55 @@
+@import '../../../assets/styles/_vars';
+@import '../../../assets/styles/fadeIn';
+
+.footer {
+  padding: 20px;
+  background: rgb(39, 32, 32);
+  color: wheat;
+}
+
+p {
+  margin: 2px;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand-title {
+  margin-top: 8px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.copyright, .social  {
+  vertical-align: middle;
+  line-height: 4em;
+  text-align: center;
+}
+
+.social-list {
+  margin: 5px 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+
+.social-list li {
+  display: inline;
+  margin: 10px;
+  a {
+    color: wheat;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .brand-title, .subtitle {
+    text-align: center;
+  }
+
+  .copyright, .social {
+    line-height: 2em;
+  }
+}
+
+

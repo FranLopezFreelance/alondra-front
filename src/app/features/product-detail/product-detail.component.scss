@@ -1,0 +1,19 @@
+@import '../../../assets/styles/fadeIn';
+
+.detail {
+  margin: 5vh 0vw;
+}
+
+.title {
+  margin-bottom: 5vh;
+}
+
+.products {
+  margin: 20px 0px;
+}
+
+@media screen and (max-width: 450px) {
+  .description {
+    margin-top: 5vh;
+  }
+}

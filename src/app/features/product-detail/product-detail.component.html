@@ -1,0 +1,30 @@
+<div class="container-fluid fadeIn">
+  <div class="row detail">
+    <!-- <div class="col-12 title">
+
+    </div> -->
+    <div class="col-md-6 col-xs-12">
+      <img src="assets/images/products/6.jpg" width="100%"/>
+    </div>
+    <div class="col-md-6 col-xs-12 description">
+      <h3>Título del Producto 1</h3>
+      <p>Este es un texto que representa  la descripción del producto.</p>
+      <p>A continuación de este es texto que representa
+        la descripción del producto, vamos a poner una serie de ítems que representan aspectos a destacar del mismo.</p>
+      <ul>
+        <li>Humecta la piel</li>
+        <li>Es para piel mixta</li>
+        <li>Es totalmente vegano</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <h4 class="col-12">Otros productos</h4>
+  </div>
+  <div class="row products">
+    <app-product-item *ngFor="let product of products"
+      [product]="product" class="col-md-4 col-xs-12"></app-product-item>
+  </div>
+</div>
+
